@@ -18,5 +18,6 @@
   <p><a href="{% url 'autos:make_create' %}">Add a make</a></p>
   <p>
     <a href="{% url 'autos:all' %}">Back to autos</a>
+    <a href="{% url 'autos:make_list' %}">View makes</a> ({{ make_count }}) |
   </p>
 {% endblock %}
