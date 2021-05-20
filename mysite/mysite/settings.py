@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-cge2e+w2k-b%at9jnla+q0ys^rwvk@v=#9uvq)_jqd1*#%vwbl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'autos.apps.AutosConfig',
     'hello',
     'home',
     'polls.apps.PollsConfig',
