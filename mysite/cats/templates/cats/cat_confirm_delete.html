@@ -1,0 +1,10 @@
+{% extends 'base_bootstrap.html' %}
+
+{% block content %}
+<h1>Delete {{ cat.nickname }}</h1>
+<form method="post">
+  {% csrf_token %}
+  <input type="submit" value="Yes, delete.">
+  <input type="submit" onclick="window.location='{% url 'cats:all' %}'; return false" value="Cancel">
+</form>
+{% endblock %}

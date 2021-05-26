@@ -1,0 +1,12 @@
+{% extends 'base_bootstrap.html' %}
+{% block content %}
+
+<h1>Breed delete</h1>
+<p>Are you sure to delete {{ breed.name }}</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Yes, delete.">
+    <input type="submit" onclick="window.location='{% url 'cats:breed_list' %}' ; return false;" value="Cancel">
+</form>
+
+{% endblock %}
