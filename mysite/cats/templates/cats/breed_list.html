@@ -16,6 +16,7 @@
 {% else %}
 <p>There are no breed in library</p>
 {% endif %}
-<a href="{% url 'cats:breed_create' %}">Create</a>
-<a href="{% url 'cats:all' %}">Back</a>
+<a href="{% url 'cats:breed_create' %}">Add a breed</a><br>
+<a href="{% url 'cats:all' %}">Back to cats</a>
+<a href="{% url 'cats:breed_list' %}">View breeds</a> ({{ breed_count }}) |
 {% endblock %}
